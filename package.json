@@ -1,0 +1,45 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "cloudflare-speed-test",
+  "description": "Measure the speed and consistency of your connection to the Internet, via Cloudflare.",
+  "categories": [
+    "Applications",
+    "Developer Tools",
+    "Productivity"
+  ],
+  "license": "MIT",
+  "author": "pmmmwh",
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "prepublishOnly": "echo \"\\n\\nIt seems like you are trying to publish the Raycast extension to npm.\\n\\nIf you did intend to publish it to npm, remove the \\`prepublishOnly\\` script and rerun \\`npm publish\\` again.\\nIf you wanted to publish it to the Raycast Store instead, use \\`npm run publish\\` instead.\\n\\n\" && exit 1",
+    "publish": "npx @raycast/api@latest publish",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "@raycast/api": "^2.9.0",
+    "@raycast/utils": "^2.2.7"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.2.0",
+    "@types/node": "22.19.17",
+    "@types/react": "19.0.10",
+    "eslint": "^10.5.0",
+    "prettier": "^3.8.5",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3"
+  },
+  "icon": "extension-icon.png",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Measure Network Performance",
+      "description": "Measure the speed and consistency of your connection to the Internet, via Cloudflare.",
+      "mode": "view"
+    }
+  ],
+  "title": "Cloudflare Speed Test",
+  "tools": []
+}
